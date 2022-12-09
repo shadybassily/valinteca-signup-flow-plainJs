@@ -173,7 +173,9 @@ const loginSuccessfull = (data) => {
   //saving the email used, to local storage
   localStorage.setItem("email", JSON.stringify(data.email));
   clearEventListeners();
-  location.replace("/html/successful");
+  //dynamic URL that will work in development and deployment
+  let url = window.location.href
+  location.replace(url.replace("signUp", "successful"));
 };
 function clearEventListeners() {
   usernameInput.removeEventListener("input", handleUsernameInput);
