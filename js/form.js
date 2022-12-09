@@ -173,7 +173,7 @@ const loginSuccessfull = (data) => {
   //saving the email used, to local storage
   localStorage.setItem("email", JSON.stringify(data.email));
   clearEventListeners();
-  location.replace("/html/successful.html");
+  location.replace("/html/successful");
 };
 function clearEventListeners() {
   usernameInput.removeEventListener("input", handleUsernameInput);
