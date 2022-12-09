@@ -21,11 +21,12 @@
 }
 
 #main-photo {
-  height: 300px;
+  height: 260px;
+  width: 315px;
   border-radius: 10px;
 }
 #page-info {
-  width: 55%;
+  width: 85%;
 }
 #headline {
   width: 100%;
@@ -49,7 +50,7 @@
   /* or 26px */
 
   text-align: center;
-
+  padding: 5px 0px 35px;
   /* light/purple-12 */
 
   color: #1f1249;
@@ -116,8 +117,11 @@
     margin: 0 auto;
 
   }
+  #page-info {
+    width: 65%;
+  }
   #main-photo {
-    height: 315px;
+    height: 325px;
     border-radius: 10px;
   }
   #headline,
