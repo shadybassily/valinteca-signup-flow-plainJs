@@ -175,6 +175,7 @@ const loginSuccessfull = (data) => {
   clearEventListeners();
   //dynamic URL that will work in development and deployment
   let url = window.location.href
+  console.log(url.replace("signUp", "successful"))
   location.replace(url.replace("signUp", "successful"));
 };
 function clearEventListeners() {

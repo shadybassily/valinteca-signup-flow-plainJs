@@ -21,12 +21,11 @@
 }
 
 #main-photo {
-  width: 315px;
-  height: 280px;
+  height: 300px;
   border-radius: 10px;
 }
 #page-info {
-  width: 55%;
+  width: 85%;
 }
 #headline {
   width: 100%;
