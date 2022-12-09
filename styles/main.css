@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+#container {
+  /* Welcome Screen */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 40px;
+
+  width: 100%;
+  height: fit-content;
+  background: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+}
+
+#main-photo {
+  width: 315px;
+  height: 280px;
+  border-radius: 10px;
+}
+#page-info {
+  width: 55%;
+}
+#headline {
+  width: 100%;
+  height: 50px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #2d2d2d;
+
+  text-align: center;
+}
+
+#sub-head {
+  width: 100%;
+  padding: 10px 0px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+
+  text-align: center;
+
+  /* light/purple-12 */
+
+  color: #1f1249;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#primary-button {
+  text-decoration: none;
+  cursor: pointer;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+
+  width: 100%;
+  height: 60px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (width >700px) {
+  body {
+    background-image: linear-gradient(
+      95deg,
+      rgba(236, 79, 79, 0.611),
+      rgba(90, 90, 197, 0.502),
+      #fff
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300% 300%;
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #headline,
+  #sub-head {
+    text-align: start;
+    width: fit-content;
+  }
+  #sub-head {
+    font-size: 20px;
+  }
+}
